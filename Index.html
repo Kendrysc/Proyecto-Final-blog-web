@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Firebase Blog</title>
+</head>
+<body>
+  <header>
+    <h1>React Firebase Blog</h1>
+  </header>
+  
+  <!-- Authentication Section -->
+  <section id="auth-section">
+    <div id="login">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="sign-in">Sign In</button>
+    </div>
+    <div id="create-account">
+      <h2>Create Account</h2>
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="text" id="lastName" placeholder="Last Name">
+      <input type="email" id="newEmail" placeholder="Email">
+      <input type="password" id="newPassword" placeholder="Password">
+      <button id="create-account-btn">Create Account</button>
+    </div>
+  </section>
+  
+  <!-- Post Creation Section -->
+  <section id="post-section" style="display: none;">
+    <div id="create-post">
+      <h2>Create Post</h2>
+      <input type="text" id="postTitle" placeholder="Title">
+      <textarea id="postContent" placeholder="Content"></textarea>
+      <button id="create-post-btn">Create Post</button>
+    </div>
+  </section>
+  
+  <!-- Post List Section -->
+  <section id="post-list">
+    <h2>Posts</h2>
+    <div id="posts"></div>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js"></script>
+  <script>
+    // Initialize Firebase and add event listeners here
+  </script>
+</body>
+</html>
+
